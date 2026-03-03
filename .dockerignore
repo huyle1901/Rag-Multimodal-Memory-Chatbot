@@ -1,0 +1,12 @@
+**/.git
+**/.DS_Store
+**/node_modules
+**/__pycache__
+chroma_*
+chroma
+.DS_Store
+.env
+.venv
+venv
+data/extracted_imgs
+prompt_eg

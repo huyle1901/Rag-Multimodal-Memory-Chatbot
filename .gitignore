@@ -1,0 +1,10 @@
+chroma_*
+chroma
+.DS_Store
+.env
+.venv/
+__pycache__/
+img2txt/__pycache__/
+venv
+data/extracted_imgs
+prompt_eg

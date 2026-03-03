@@ -41,7 +41,7 @@ Processes and analyzes information from varied data types, such as text and imag
 ## Setup
 
 1. Clone the repository.
-2. Install the required dependencies: `pip install -r requirements.txt`. If you want LLaVA support, also install `requirements.llava.txt`.
+2. Install the required dependencies: `pip install -r requirements.txt`.
 3. Copy `.env.example` to `.env` and set the required environment variables, especially `OPENAI_API_KEY`.
 4. Start PostgreSQL locally, or use Docker Compose.
 
@@ -51,8 +51,8 @@ Processes and analyzes information from varied data types, such as text and imag
 - `CHAT_MODEL`: chat completion model used to answer the user.
 - `SUMMARY_MODEL`: model used to compress older turns into summary memory.
 - `EMBEDDING_MODEL`: embedding model used for both indexing and retrieval.
-- `OPENAI_VISION_MODEL`: vision-capable model used when `IMAGE_TO_TEXT_PROVIDER=openai`.
-- `IMAGE_TO_TEXT_PROVIDER`: `openai` or `llava`.
+- `OPENAI_VISION_MODEL`: vision-capable
+- `IMAGE_TO_TEXT_PROVIDER`: `openai`
 - `DATABASE_URL`: PostgreSQL connection string for chat history and summary storage.
 
 ## Docker

@@ -7,7 +7,7 @@ This project uses Multimodal RAG (Retrieval-Augmented Generation) to extract, pr
 ## Features
 
 - **PDF and Image Processing**: Automated extraction of text and imagery from PDF files, making all accessible information machine-readable.
-- **Adaptive Image-to-Text Conversion**: Users can choose between the OpenAI API or the LLaVA model for converting images to descriptive text, enabling deep analysis and indexing.
+- **Adaptive Image-to-Text Conversion**: Using OpenAI API for converting images to descriptive text, enabling deep analysis and indexing.
 - **Advanced Text and Image Indexing**: Leverages the Chroma vector database for embedding and efficiently searching through text and image-derived content.
 - **Interactive Chatbot Interface**: A Streamlit chatbot with persistent sessions, stored history, and summary memory.
 - **Persistent Memory Layer**: Chat sessions and message history are stored in PostgreSQL, with an LLM-generated summary used as compact long-term context.
@@ -16,7 +16,7 @@ This project uses Multimodal RAG (Retrieval-Augmented Generation) to extract, pr
 ## Technical Components
 
 - **LangChain**: Manages document loading, text extraction, splitting, and the integration of complex NLP workflows.
-- **OpenAI API / LLaVA Model**: Provides options for high-accuracy image-to-text conversion through OpenAI's models or the "llava-hf/llava-1.5-7b-hf" model, capable of understanding and generating descriptions for complex visual content.
+- **OpenAI API**: Provides high-accuracy image-to-text conversion through OpenAI's models, capable of understanding and generating descriptions for complex visual content.
 - **Chroma**: Utilizes a vector-based approach for storing and retrieving text embeddings, ensuring quick and relevant similarity searches.
 - **Streamlit**: Provides the chat interface for multi-turn conversations.
 - **PostgreSQL**: Stores sessions, messages, and conversation summaries.
@@ -38,9 +38,6 @@ Improves the quality and relevance of text responses by basing them on content e
 ### Multimodal Learning
 Processes and analyzes information from varied data types, such as text and images, to improve overall understanding and contextually relevant responses.
 
-### Flexible Image-to-Text Conversion
-Offers the use of either OpenAI's cutting-edge models or the LLaVA model for image description tasks, supporting various project requirements and enhancing the system's adaptability.
-
 ## Setup
 
 1. Clone the repository.
@@ -48,12 +45,6 @@ Offers the use of either OpenAI's cutting-edge models or the LLaVA model for ima
 3. Copy `.env.example` to `.env` and set the required environment variables, especially `OPENAI_API_KEY`.
 4. Start PostgreSQL locally, or use Docker Compose.
 
-## Usage
-
-- Put your PDFs in `data/raw`.
-- Execute `python create_database.py` to process documents, extract image descriptions, and populate Chroma.
-- Start the chatbot with `streamlit run app.py`.
-- Access the Streamlit URL and begin chatting.
 
 ## Environment Variables
 

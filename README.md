@@ -60,3 +60,7 @@ Processes and analyzes information from varied data types, such as text and imag
 - Start the app and PostgreSQL: `docker compose up --build`
 - Build or refresh the vector database: `docker compose run --rm app python create_database.py`
 - Open the chatbot at `http://localhost:8501`
+
+## Acknowledgment
+
+This project is adapted from [Cohorte-ai/multi_modal_rag_demo](https://github.com/Cohorte-ai/multi_modal_rag_demo). I used it as the base project and modified it by adding new features, restructuring parts of the codebase, and tailoring it to my own use case.
